@@ -1,0 +1,120 @@
+.Weather p {
+  margin: none;
+  padding: none;
+}
+
+.Search {
+  padding: 30px;
+  background-color: transparent;
+  border-radius: 30px;
+  border: none;
+}
+
+.input {
+  border: none;
+  border-radius: 10px;
+  background-color: #f7f7f7;
+  padding: 10px;
+  text-align: center;
+  color: #616161;
+  outline: none;
+}
+
+.searchButton {
+  border: none;
+  border-radius: 10px;
+  background-color: #f7f7f7;
+  padding: 10px 30px;
+  margin-left: 7px;
+}
+
+.currentLocation {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  border: 1px;
+  text-decoration: underline;
+  color: #616161;
+}
+
+.currentLocation:focus {
+  border: none;
+  outline: none;
+}
+
+.Weather ::placeholder {
+  color: #616161;
+}
+
+.Result {
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+  color: silver;
+  font-family: "Raleway", sans-serif;
+  display: block;
+  margin: 50px 0 0;
+  line-height: 1;
+}
+
+.weatherCondition {
+  font-size: 25px;
+  margin: 40px 0;
+  text-transform: capitalize;
+  color: #f7f7f7;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  display: block;
+}
+
+.icon {
+  max-width: 250px;
+  position: relative;
+  top: -10px;
+  left: -5px;
+}
+
+.currentTemperature {
+  font-size: 60px;
+  color: #ffffff;
+}
+
+.units {
+  display: inline-block;
+  color: #ffffff;
+  opacity: 0.8;
+  font-size: 30px;
+}
+
+.units:visited {
+  color: silver;
+}
+
+.temperatureDisplay {
+  margin-bottom: 15px;
+}
+
+.temperatureDisplay,
+.units {
+  position: relative;
+  margin-top: 15px;
+}
+
+.weatherInCity {
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  color: silver;
+  font-family: "Raleway", sans-serif;
+  display: block;
+  margin: 20px 0 0;
+}
+
+.highestLowestWindHumidity {
+  color: silver;
+  font-weight: 600;
+  line-height: 1.5;
+  margin: 30px 0;
+}

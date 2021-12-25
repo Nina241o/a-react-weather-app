@@ -1,0 +1,14 @@
+.Footer {
+  font-family: "Raleway", sans-serif;
+  font-size: 10px;
+  display: block;
+  color: silver;
+  text-decoration: none;
+  position: fixed;
+  margin-left: 265px;
+}
+
+.Footer a {
+  color: silver;
+  font-weight: bold;
+}
