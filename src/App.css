@@ -12,8 +12,7 @@
 }
 
 .App .Card {
-  background: radial-gradient(circle at 10% 20%, rgb(253, 239, 132) 0%, rgb(247, 198, 169) 54.2%, rgb(21, 186, 196) 100.3%);
-
+  background: linear-gradient(109.6deg, rgb(18, 94, 183) 11.2%, rgb(154, 214, 212) 55.4%, rgb(255, 233, 171) 100.2%);
   filter: blur(0px);
   font-family: "Raleway", sans-serif;
   border: 5px outset #bdbdbd;
