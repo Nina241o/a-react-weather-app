@@ -10,19 +10,26 @@ export default function DefaultCity() {
       <br />
       <div className="weatherInCity">The weather in Darmstadt</div>
       <CurrentDate />
-      <div className="temperatureDisplay">
-        <h3 className="weatherCondition">clear sky</h3>
-        <span>
-          <img
-            src="http://openweathermap.org/img/wn/01d@2x.png"
-            alt="weatherDescription"
-            className="icon"
-          />
-        </span>
-        <div className="currentTemperature">
-          3<span className="units">°C | °F</span>
+      <div className="container">
+        <div className="row temperatureDisplay">
+          <div className="col-5 align-self-start pb-2">
+            <h3 className="weatherCondition">Clear Sky</h3>
+          </div>
+          <div className="col-2 align-self-end">
+            <img
+              src="http://openweathermap.org/img/wn/01d@2x.png"
+              alt="weatherDescription"
+              className="icon"
+            />
+          </div>
+          <div className="col-5 align-self-start">
+            <span className="currentTemperature">
+              3<span className="units">°C | °F</span>
+            </span>
+          </div>
         </div>
       </div>
+
       <div className="highestLowestWindHumidity">
         <div>Highest: 4°c</div>
         <div>Lowest: -1°c</div>

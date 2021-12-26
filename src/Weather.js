@@ -64,27 +64,32 @@ export default function Weather() {
         <br />
         <p className="weatherInCity">The weather in {city}</p>
         <CurrentDate />
-        <div className="temperatureDisplay">
-          <h3 className="weatherCondition">{weather.description}</h3>
-          <span>
-            <img
-              src={weather.icon}
-              alt={weather.description}
-              className="icon"
-            />
-          </span>
-          <div className="currentTemperature">
-            {Math.round(weather.temperature)}
-            <span className="units"> °C | °F</span>
+        <div className="container">
+          <div className="row temperatureDisplay">
+            <div className="col-5 align-self-start pb-2">
+              <h3 className="weatherCondition">{weather.description}</h3>
+            </div>
+            <div className="col-2 align-self-end">     
+              <img
+                src={weather.icon}
+                alt={weather.description}
+                className="icon"
+              />
+            </div>
+            <div className="col-5 align-self-start"><span className="currentTemperature">
+              {Math.round(weather.temperature)}</span>
+              <span className="units"> °C | °F</span>
+            </div>
           </div>
         </div>
+      
         <div className="highestLowestWindHumidity">
           <div>Highest: {Math.round(weather.highest)}°c</div>
           <div>Lowest: {Math.round(weather.lowest)}°c</div>
           <div>Wind: {Math.round(weather.wind)} km/h</div>
           <div>Humidity: {Math.round(weather.humidity)}%</div>
         </div>
-      </div>
+      </div>  
     );
   } else {
     return (
