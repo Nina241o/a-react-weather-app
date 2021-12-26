@@ -6,7 +6,7 @@ import Footer from "./Footer";
 export default function App() {
   return (
     <div className="App">
-      <div className="Container">
+      <div className="container">
         <div className="Card">
           <Weather />
           <br />

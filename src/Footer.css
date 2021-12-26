@@ -2,13 +2,15 @@
   font-family: "Raleway", sans-serif;
   font-size: 10px;
   display: block;
-  color: silver;
+  color: #616161;
+  opacity: 0.6;
   text-decoration: none;
   position: fixed;
   margin-left: 265px;
 }
 
 .Footer a {
-  color: silver;
+  color: #616161;
+  opacity: 0.6;
   font-weight: bold;
 }
