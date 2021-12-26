@@ -9,11 +9,11 @@ import "./Weather.css";
 export default function Weather() {
   const [city, setCity] = useState("");
   const [loaded, setLoaded] = useState(false);
-  const [weather, setWeather] = useState({});
+  const [weatherData, setWeatherData] = useState({});
 
   function displayWeather(response) {
     setLoaded(true);
-    setWeather({
+    setWeatherData({
       temperature: response.data.main.temp,
       icon: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
       description: response.data.weather[0].description,
@@ -67,29 +67,31 @@ export default function Weather() {
         <div className="container">
           <div className="row temperatureDisplay">
             <div className="col-5 align-self-start pb-2">
-              <h3 className="weatherCondition">{weather.description}</h3>
+              <h3 className="weatherCondition">{weatherData.description}</h3>
             </div>
-            <div className="col-2 align-self-end">     
+            <div className="col-2 align-self-end">
               <img
-                src={weather.icon}
-                alt={weather.description}
+                src={weatherData.icon}
+                alt={weatherData.description}
                 className="icon"
               />
             </div>
-            <div className="col-5 align-self-start"><span className="currentTemperature">
-              {Math.round(weather.temperature)}</span>
+            <div className="col-5 align-self-start">
+              <span className="currentTemperature">
+                {Math.round(weatherData.temperature)}
+              </span>
               <span className="units"> °C | °F</span>
             </div>
           </div>
         </div>
-      
+
         <div className="highestLowestWindHumidity">
-          <div>Highest: {Math.round(weather.highest)}°c</div>
-          <div>Lowest: {Math.round(weather.lowest)}°c</div>
-          <div>Wind: {Math.round(weather.wind)} km/h</div>
-          <div>Humidity: {Math.round(weather.humidity)}%</div>
+          <div>Highest: {Math.round(weatherData.highest)}°c</div>
+          <div>Lowest: {Math.round(weatherData.lowest)}°c</div>
+          <div>Wind: {Math.round(weatherData.wind)} km/h</div>
+          <div>Humidity: {Math.round(weatherData.humidity)}%</div>
         </div>
-      </div>  
+      </div>
     );
   } else {
     return (
