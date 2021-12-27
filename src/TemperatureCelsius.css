@@ -1,0 +1,11 @@
+.currentTemperature {
+  font-size: 60px;
+  color: #ffffff;
+}
+
+.units {
+  display: inline-block;
+  color: #ffffff;
+  opacity: 0.8;
+  font-size: 30px;
+}

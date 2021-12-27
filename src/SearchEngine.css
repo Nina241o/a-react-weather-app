@@ -65,7 +65,7 @@
 }
 
 .weatherCondition {
-  font-size: 25px;
+  font-size: 45px;
   margin: 40px 0;
   text-transform: capitalize;
   color: #f7f7f7;
@@ -95,16 +95,6 @@
 
 .units:visited {
   color: silver;
-}
-
-.temperatureDisplay {
-  margin-bottom: 15px;
-}
-
-.temperatureDisplay,
-.units {
-  position: relative;
-  margin-top: 15px;
 }
 
 .highestLowestWindHumidity {
