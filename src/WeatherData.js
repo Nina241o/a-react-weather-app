@@ -33,10 +33,21 @@ export default function WeatherData(props) {
         </div>
       </div>
       <div className="highestLowestWindHumidity">
-        <div>Highest: {Math.round(props.info.highest)}°c</div>
-        <div>Lowest: {Math.round(props.info.lowest)}°c</div>
-        <div>Wind: {Math.round(props.info.wind)} km/h</div>
-        <div>Humidity: {Math.round(props.info.humidity)}%</div>
+        <div>
+          <i class="fas fa-thermometer-full"></i> Highest:{" "}
+          {Math.round(props.info.highest)}°c
+        </div>
+        <div>
+          <i class="fas fa-thermometer-quarter"></i> Lowest:{" "}
+          {Math.round(props.info.lowest)}°c
+        </div>
+        <div>
+          <i class="fas fa-wind"></i> Wind: {Math.round(props.info.wind)} km/h
+        </div>
+        <div>
+          <i class="fas fa-tint"></i> Humidity:{" "}
+          {Math.round(props.info.humidity)}%
+        </div>
       </div>
     </div>
   );
