@@ -2,7 +2,7 @@ import React from "react";
 
 import CurrentDate from "./CurrentDate";
 import AnimatedWeatherIcon from "./AnimatedWeatherIcon";
-import TemperatureCelsius from "./TemperatureCelsius";
+import UnitConversion from "./UnitConversion";
 
 import "./WeatherData.css";
 
@@ -28,7 +28,7 @@ export default function WeatherData(props) {
             />
           </div>
           <div className="col-4 align-self-center pb-2">
-            <TemperatureCelsius celsius={props.info.temperature} />
+            <UnitConversion celsius={props.info.temperature} />
           </div>
         </div>
       </div>
