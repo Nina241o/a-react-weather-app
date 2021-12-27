@@ -1,7 +1,7 @@
 import React from "react";
 
 import CurrentDate from "./CurrentDate";
-import WeatherIcon from "./WeatherIcon";
+import AnimatedWeatherIcon from "./AnimatedWeatherIcon";
 import TemperatureCelsius from "./TemperatureCelsius";
 
 import "./WeatherData.css";
@@ -13,16 +13,21 @@ export default function WeatherData(props) {
       <p className="weatherInCity">The weather in {props.info.city}</p>
       <CurrentDate date={props.info.date} />
       <div className="container">
-        <div className="row temperatureDisplay">
-          <div className="col-5 align-self-center pt-2">
+        <div className="row temperatureDisplay mx-2">
+          <div className="col-4 align-self-center pt-2">
             <h3 className="weatherCondition">
               <span>{props.info.description}</span>
             </h3>
           </div>
-          <div className="col-2 align-self-end">
-            <WeatherIcon code={props.info.icon} size={150} className="icon" />
+          <div className="col-4 align-self-center pt-1">
+            <AnimatedWeatherIcon
+              code={props.info.icon}
+              alt={props.info.description}
+              size={150}
+              className="icon"
+            />
           </div>
-          <div className="col-5 align-self-center pb-2">
+          <div className="col-4 align-self-center pb-2">
             <TemperatureCelsius celsius={props.info.temperature} />
           </div>
         </div>

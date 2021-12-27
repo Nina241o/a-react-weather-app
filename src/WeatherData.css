@@ -20,17 +20,6 @@
   display: block;
 }
 
-.icon {
-  max-width: 250px;
-  position: relative;
-  top: -10px;
-  left: -5px;
-}
-
-.units:visited {
-  color: silver;
-}
-
 .highestLowestWindHumidity {
   color: #616161;
   opacity: 0.8;
