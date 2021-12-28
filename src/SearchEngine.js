@@ -1,17 +1,15 @@
 import React, { useState } from "react";
 import axios from "axios";
-import Loader from "react-loader-spinner"
+import Loader from "react-loader-spinner";
 
 import WeatherData from "./WeatherData";
+import ForecastDay from "./ForecastWeek";
 
 import "./SearchEngine.css";
-
-
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
   const [city, setCity] = useState(props.defaultCity);
-  
 
   function handleResponse(response) {
     setWeatherData({
@@ -29,17 +27,14 @@ export default function Weather(props) {
     });
   }
 
-
   function handleSubmit(event) {
     event.preventDefault();
     search();
   }
 
-
   function handleUpdateCity(event) {
     setCity(event.target.value);
   }
- 
 
   function search() {
     const apiKey = `252a76efb5ff0f5ccce232674a26dbf8`;
@@ -47,10 +42,10 @@ export default function Weather(props) {
     let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${unit}`;
     axios.get(url).then(handleResponse);
   }
-  
+
   if (weatherData.ready) {
     return (
-      <div className="Weather"> 
+      <div className="Weather">
         <form className="searchBar" onSubmit={handleSubmit}>
           <input
             type="search"
@@ -70,19 +65,20 @@ export default function Weather(props) {
           </div>
         </form>
         <WeatherData info={weatherData} />
+        <ForecastDay coordinates={weatherData.coordinates} />
       </div>
     );
   } else {
     search();
-      return (
-        <Loader 
-          type="Circles"
-          color= "#ffffff"
-          opacity= "0.8"
-          height={200}
-          width={200}
-          timeout={3000} //3 secs
-        />
-      );
+    return (
+      <Loader
+        type="Circles"
+        color="#ffffff"
+        opacity="0.8"
+        height={100}
+        width={100}
+        timeout={3000} //3 secs
+      />
+    );
   }
 }

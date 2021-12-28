@@ -28,7 +28,7 @@ export default function Temperature(props) {
       </div>
     );
   } else {
-    let fahrenheit = (props.celsius * 9/5) + 32;
+    let fahrenheit = (props.celsius * 9) / 5 + 32;
     return (
       <div className="UnitConversion">
         <span className="currentTemperature">{Math.round(fahrenheit)}</span>

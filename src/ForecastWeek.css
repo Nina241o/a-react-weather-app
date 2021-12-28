@@ -1,0 +1,11 @@
+.Forecast h3 {
+  color: #ffffff;
+  text-decoration: underline;
+  font-size: 18px;
+  font-weight: 400;
+  margin: 40px 0 20px;
+}
+
+.Forecast row {
+  margin: 0 10px 30px;
+}

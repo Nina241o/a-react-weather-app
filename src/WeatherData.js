@@ -10,7 +10,9 @@ export default function WeatherData(props) {
   return (
     <div className="WeatherData">
       <br />
-      <p className="weatherInCity">The weather in {props.info.city}</p>
+      <p className="weatherInCity">
+        The weather in {props.info.city}, {props.info.country}
+      </p>
       <CurrentDate date={props.info.date} />
       <div className="container">
         <div className="row temperatureDisplay mx-2">
@@ -34,18 +36,18 @@ export default function WeatherData(props) {
       </div>
       <div className="highestLowestWindHumidity">
         <div>
-          <i class="fas fa-thermometer-full"></i> Highest:{" "}
+          <i className="fas fa-thermometer-full"></i> Highest:{" "}
           {Math.round(props.info.highest)}°c
         </div>
         <div>
-          <i class="fas fa-thermometer-quarter"></i> Lowest:{" "}
+          <i className="fas fa-thermometer-quarter"></i> Lowest:{" "}
           {Math.round(props.info.lowest)}°c
         </div>
         <div>
-          <i class="fas fa-wind"></i> Wind: {Math.round(props.info.wind)} km/h
+          <i className="fas fa-wind"></i> Wind: {Math.round(props.info.wind)} km/h
         </div>
         <div>
-          <i class="fas fa-tint"></i> Humidity:{" "}
+          <i className="fas fa-tint"></i> Humidity:{" "}
           {Math.round(props.info.humidity)}%
         </div>
       </div>
