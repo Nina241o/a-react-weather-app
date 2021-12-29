@@ -1,6 +1,14 @@
 body {
   margin: 0;
   font-family: "Raleway", sans-serif;
+  background: linear-gradient(
+    118.6deg,
+    rgb(18, 94, 183) 5.2%,
+    rgb(154, 214, 212) 48.4%,
+    rgb(255, 233, 171) 108.2%
+  );
+  background-repeat: no-repeat;
+  height: 100vh;
 }
 
 code {

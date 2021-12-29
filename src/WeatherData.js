@@ -31,7 +31,7 @@ export default function WeatherData(props) {
           </div>
           <div className="col-4 align-self-center pb-2">
             <UnitConversion celsius={props.info.temperature} />
-            <div className="feelsLike">feels like: {Math.round(props.info.feelsLike)}°c</div>
+            <div className="feelsLike">feels like {Math.round(props.info.feelsLike)}°c</div>
           </div>
         </div>
       </div>
