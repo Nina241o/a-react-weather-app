@@ -20,6 +20,12 @@
   display: block;
 }
 
+.feelsLike {
+  color: #616161;
+  font-size: 15px;
+  font-weight: 400;
+}
+
 .highestLowestWindHumidity {
   color: #616161;
   opacity: 0.8;

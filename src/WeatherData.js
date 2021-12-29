@@ -31,6 +31,7 @@ export default function WeatherData(props) {
           </div>
           <div className="col-4 align-self-center pb-2">
             <UnitConversion celsius={props.info.temperature} />
+            <div className="feelsLike">feels like: {Math.round(props.info.feelsLike)}°c</div>
           </div>
         </div>
       </div>
@@ -44,7 +45,8 @@ export default function WeatherData(props) {
           {Math.round(props.info.lowest)}°c
         </div>
         <div>
-          <i className="fas fa-wind"></i> Wind: {Math.round(props.info.wind)} km/h
+          <i className="fas fa-wind"></i> Wind: {Math.round(props.info.wind)}{" "}
+          km/h
         </div>
         <div>
           <i className="fas fa-tint"></i> Humidity:{" "}
