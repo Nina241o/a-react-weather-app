@@ -36,25 +36,34 @@ export default function WeatherData(props) {
             </div>
           </div>
         </div>
-      </div>
-      <div className="highestLowestWindHumidity">
-        <div>
-          <i className="fas fa-thermometer-full"></i> Highest:{" "}
-          {Math.round(props.info.highest)}°c
+        
+        <div className="row highestLowestWindHumidity">
+          <div className="col-5 icons iconHigh">
+            <i className="fas fa-thermometer-full"></i>
+          </div>
+          <div className="col-7 DataOutput">
+            highest: {Math.round(props.info.highest)}°c
+          </div>
+          <div className="col-5 icons iconLow">
+            <i className="fas fa-thermometer-quarter"></i>
+          </div>
+          <div className="col-7 DataOutput">
+            lowest: {Math.round(props.info.lowest)}°c
+         </div>      
+          <div className="col-5 icons iconWind">
+            <i className="fas fa-wind"></i> 
+          </div>
+         <div className="col-7 DataOutput">
+            wind: {Math.round(props.info.wind)}{" "}km/h
+          </div>
+         <div className="col-5 icons iconHumi">{" "}
+           <i className="fas fa-tint"></i>          
+         </div>
+         <div className="col-7 DataOutput">
+            humidity:{" "}{Math.round(props.info.humidity)}%
+          </div>
         </div>
-        <div>
-          <i className="fas fa-thermometer-quarter"></i>
-          {"  "}Lowest: {Math.round(props.info.lowest)}°c
-        </div>
-        <div>
-          <i className="fas fa-wind"></i> Wind speed: {Math.round(props.info.wind)}{" "}
-          km/h
-        </div>
-        <div>
-          <i className="fas fa-tint"></i> Humidity:{" "}
-          {Math.round(props.info.humidity)}%
-        </div>
-      </div>
+     </div>
     </div>
   );
 }

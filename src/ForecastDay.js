@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 import "./ForecastDay.css";
 
@@ -37,7 +37,7 @@ export default function ForecastDay(props) {
   }
   return (
     <div className="ForecastDay">
-      <div className="mt-2 mb-2">{day()}</div>
+      <div className="mt-2 mb-3">{day()}</div>
       <AnimatedWeatherIcon code={props.data.weather[0].icon} size={54} />
       <div className="ForecastTemperatures mt-2">
         <span className="ForeacastTemperature-Max">{maxTemp()}</span> |

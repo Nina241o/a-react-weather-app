@@ -1,16 +1,16 @@
-.Weather p {
+.SearchEngine .Weather p {
   margin: none;
   padding: none;
 }
 
-.Search {
+.SearchEngine .searchbar {
   padding: 30px;
   background-color: transparent;
   border-radius: 30px;
   border: none;
 }
 
-.Weather ::placeholder {
+.SearchEngine .Weather ::placeholder {
   color: #616161;
   opacity: 0.8;
 }

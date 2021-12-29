@@ -1,5 +1,4 @@
-
-.weatherInCity {
+.WeatherData .weatherInCity {
   font-size: 18px;
   font-weight: 400;
   text-align: center;
@@ -10,7 +9,7 @@
   margin: 20px 0 0;
 }
 
-.weatherCondition {
+.WeatherData .weatherCondition {
   font-size: 33px;
   margin: 40px 0;
   text-transform: capitalize;
@@ -20,16 +19,26 @@
   display: block;
 }
 
-.feelsLike {
-  color: #616161;
-  font-size: 15px;
+.WeatherData .feelsLike {
+  color: #f7f7f7;
+  font-size: 18px;
   font-weight: 400;
 }
 
-.highestLowestWindHumidity {
+.WeatherData .highestLowestWindHumidity {
   color: #616161;
   opacity: 0.8;
   font-weight: 500;
   line-height: 1.5;
   margin: 30px 0;
+}
+
+.WeatherData .icons {
+  text-align: right;
+  padding: 0;
+}
+
+.WeatherData .DataOutput {
+  text-align: left;
+  padding-left: 20px;
 }
