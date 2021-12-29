@@ -15,7 +15,7 @@ export default function WeatherData(props) {
       </p>
       <CurrentDate date={props.info.date} />
       <div className="container">
-        <div className="row temperatureDisplay mx-2">
+        <div className="row align-items-center mx-2 temperatureDisplay">
           <div className="col-4 align-self-center pt-2">
             <h3 className="weatherCondition">
               <span>{props.info.description}</span>
@@ -43,11 +43,11 @@ export default function WeatherData(props) {
           {Math.round(props.info.highest)}°c
         </div>
         <div>
-          <i className="fas fa-thermometer-quarter"></i> Lowest:{" "}
-          {Math.round(props.info.lowest)}°c
+          <i className="fas fa-thermometer-quarter"></i>
+          {"  "}Lowest: {Math.round(props.info.lowest)}°c
         </div>
         <div>
-          <i className="fas fa-wind"></i> Wind: {Math.round(props.info.wind)}{" "}
+          <i className="fas fa-wind"></i> Wind speed: {Math.round(props.info.wind)}{" "}
           km/h
         </div>
         <div>

@@ -15,13 +15,11 @@ export default function ForecastWeek(props) {
   }, [props.coordinates])
 
   function handleResponse(response) {
-    console.log(response.data);
     setForecastData(response.data.daily);
     setForecastLoaded(true);
   }
 
   if (forecastLoaded) {
-    console.log(forecastData);
     return (
       <div className="Forecast">
         <h3>weather forecast for the upcoming week</h3>
@@ -33,6 +31,8 @@ export default function ForecastWeek(props) {
                   <ForecastDay data={dailyForecast} />
                 </div>
               );
+            } else {
+              return null;
             }
           })}
         </div>
