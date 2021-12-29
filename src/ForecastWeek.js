@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Loader from "react-loader-spinner";
 
@@ -9,6 +9,10 @@ import ForecastDay from "./ForecastDay";
 export default function ForecastWeek(props) {
   let [forecastLoaded, setForecastLoaded] = useState(false);
   let [forecastData, setForecastData] = useState(null);
+
+  useEffect(() => {
+    setForecastLoaded(false);
+  }, [props.coordinates])
 
   function handleResponse(response) {
     console.log(response.data);
