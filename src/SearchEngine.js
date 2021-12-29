@@ -26,6 +26,7 @@ export default function Weather(props) {
       wind: response.data.wind.speed,
       humidity: response.data.main.humidity,
       city: response.data.name,
+      country: response.data.sys.country,
     });
   }
 
@@ -45,6 +46,20 @@ export default function Weather(props) {
     axios.get(url).then(handleResponse);
   }
 
+  function searchCurrentLocation(position) {
+    const apiKey = `252a76efb5ff0f5ccce232674a26dbf8`;
+    let unit = "metric";
+    let latitude = position.coords.latitude;
+    let longitude = position.coords.longitude;
+    let url = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=${unit}`;
+    axios.get(url).then(handleResponse);
+  }
+
+  function getCurrentLocation(event) {
+    event.preventDefault();
+    navigator.geolocation.getCurrentPosition(searchCurrentLocation);
+  }
+
   if (weatherData.ready) {
     return (
       <div className="Weather">
@@ -59,7 +74,7 @@ export default function Weather(props) {
           />
           <input type="submit" value="Search" className="searchButton" />
           <div>
-            <button className="currentLocation">
+            <button className="currentLocation" onClick={getCurrentLocation}>
               <div>
                 My Location <i className="fas fa-map-pin"></i>
               </div>
