@@ -1,11 +1,11 @@
 
 .ForecastDay {
-  color: #616161;
+  color: #C0C0C0;
   font-size: 13px;
   margin: 0 10px 30px;
 }
 
 .ForecastDay .ForecastTemperatures {
-  color: #616161;
+  color: #C0C0C0;
   opacity: 0.7;
 }

@@ -15,7 +15,7 @@ export default function WeatherData(props) {
       </p>
       <CurrentDate date={props.info.date} />
       <div className="container">
-        <div className="row align-items-center mx-2 temperatureDisplay">
+        <div className="row align-items-center mx-2">
           <div className="col-4 align-self-center pt-2">
             <h3 className="weatherCondition">
               <span>{props.info.description}</span>
@@ -26,6 +26,7 @@ export default function WeatherData(props) {
               code={props.info.icon}
               alt={props.info.description}
               size={150}
+              color="#ffffff"
               className="icon"
             />
           </div>

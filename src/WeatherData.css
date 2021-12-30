@@ -2,7 +2,7 @@
   font-size: 18px;
   font-weight: 400;
   text-align: center;
-  color: #616161;
+  color: silver;
   opacity: 0.9;
   font-family: "Raleway", sans-serif;
   display: block;
@@ -20,14 +20,13 @@
 }
 
 .WeatherData .feelsLike {
-  color: #f7f7f7;
+  color: silver;
   font-size: 18px;
   font-weight: 400;
 }
 
 .WeatherData .highestLowestWindHumidity {
-  color: #616161;
-  opacity: 0.8;
+  color: silver;
   font-weight: 500;
   line-height: 1.5;
   margin: 30px 0;
