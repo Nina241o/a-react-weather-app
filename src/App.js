@@ -1,8 +1,7 @@
 import "./App.css";
-import Background from "./img/night.jpg";
+import Background from "./img/noon.jpg";
 
 import SearchEngine from "./SearchEngine";
-import Footer from "./Footer";
 
 export default function App() {
   return (
@@ -13,13 +12,29 @@ export default function App() {
           style={{
             backgroundImage: "url(" + Background + ")",
             backgroundSize: "cover",
-            height: "100%",
+            height: "100vh",
             color: "#f5f5f5",
           }}
         >
           <SearchEngine defaultCity="Darmstadt" />
           <br />
-          <Footer />
+        </div>
+        <div className="Footer">
+          <a
+            href="https://github.com/Nina241o/a-react-weather-app"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Open-Source code on Github
+          </a>{" "}
+          by Florina Seipp, hosted on{" "}
+          <a
+            href="https://thirsty-hodgkin-5fcfe2.netlify.app/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Netlify
+          </a>
         </div>
       </div>
     </div>

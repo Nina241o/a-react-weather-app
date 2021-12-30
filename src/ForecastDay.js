@@ -41,7 +41,7 @@ export default function ForecastDay(props) {
       <AnimatedWeatherIcon
         code={props.data.weather[0].icon}
         size={54}
-        color="#C0C0C0"
+        color="#ffffff"
       />
       <div className="ForecastTemperatures mt-2">
         <span className="ForeacastTemperature-Max">{maxTemp()}</span> |
