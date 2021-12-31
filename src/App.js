@@ -1,5 +1,5 @@
 import "./App.css";
-import Background from "./img/noon.jpg";
+import Background from "./img/dawn.jpg";
 
 import SearchEngine from "./SearchEngine";
 
@@ -13,7 +13,6 @@ export default function App() {
             backgroundImage: "url(" + Background + ")",
             backgroundSize: "cover",
             height: "100vh",
-            color: "#f5f5f5",
           }}
         >
           <SearchEngine defaultCity="Darmstadt" />
@@ -39,4 +38,4 @@ export default function App() {
       </div>
     </div>
   );
-}
+        }

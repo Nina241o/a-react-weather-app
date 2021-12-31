@@ -1,7 +1,7 @@
 
 .ForecastDay {
-  color: #ffffff;
-  font-size: 14px;
+  color: hsl(0, 0%, 100%);
+  font-size: 13px;
   margin: 0 10px 20px;
 }
 

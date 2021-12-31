@@ -38,7 +38,7 @@ export default function WeatherData(props) {
           </div>
         </div>
         
-        <div className="row highestLowestWindHumidity">
+        <div className="row highestLowestWindHumidity pt-4">
           <div className="col-5 icons iconHigh">
             <i className="fas fa-thermometer-full"></i>
           </div>
