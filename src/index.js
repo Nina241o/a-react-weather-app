@@ -17,6 +17,7 @@ ReactDOM.render(
         }}
       >
         <h1> React to any weather!</h1>
+        <p>- coder's pun intended -</p>
         <App />
       </div>
     </div>
