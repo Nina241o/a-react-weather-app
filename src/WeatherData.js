@@ -14,7 +14,7 @@ export default function WeatherData(props) {
         The weather in {props.info.city}, {props.info.country}
       </p>
       <CurrentDate date={props.info.date} />
-      <div className="container">
+      <div className="container mt-2">
         <div className="row align-items-center mx-2">
           <div className="col-4 align-self-center pt-2">
             <h3 className="weatherCondition">

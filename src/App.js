@@ -5,14 +5,14 @@ import SearchEngine from "./SearchEngine";
 
 export default function App() {
   return (
-    <div className="App">
+     <div className="App">
       <div className="container">
         <div
           className="Card"
           style={{
             backgroundImage: "url(" + Background + ")",
             backgroundSize: "cover",
-            height: "100vh",
+            height: "900px",
           }}
         >
           <SearchEngine defaultCity="Darmstadt" />

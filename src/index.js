@@ -8,15 +8,17 @@ import Background from "./img/dawn.jpg";
 
 ReactDOM.render(
   <React.StrictMode>
-    <div
-      className="Background"
-      style={{
-        backgroundImage: "url(" + Background + ")",
-        backgroundSize: "cover",
-        height: "100%",
-      }}
-    >
-      <App />
+    <div>
+      <div
+        className="Background"
+        style={{
+          backgroundImage: "url(" + Background + ")",
+          backgroundSize: "cover",
+        }}
+      >
+        <h1> React to any weather!</h1>
+        <App />
+      </div>
     </div>
   </React.StrictMode>,
   document.getElementById("root")
